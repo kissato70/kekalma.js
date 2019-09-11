@@ -1,5 +1,5 @@
 
-class kekalma {
+module.exports = class kekalma {
 
 //**************************** HTML kódeltávolító *************************************************
 removeHTMLTags = function(HTMLtxt){
@@ -28,5 +28,3 @@ ezres = function(x,sep) {
 
 };
 
-
-export default kekalma;
