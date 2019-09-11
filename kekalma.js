@@ -1,4 +1,6 @@
-export removeHTMLTags = function(HTMLtxt){
+
+//**************************** HTML kódeltávolító *************************************************
+exports removeHTMLTags = function(HTMLtxt){
     if(HTMLtxt)
     {	
          HTMLtxt = HTMLtxt.replace(/&(lt|gt);/g, function (strMatch, p1){
@@ -8,4 +10,15 @@ export removeHTMLTags = function(HTMLtxt){
         return strTagStrippedText;
     }
     else return "";
+}
+
+
+//****************************  Ezres szeparátor *************************************************
+exports ezres = function(x,sep) {
+	if (sep==null) { sep=' '; }
+	x = x.toString();
+    var pattern = /(-?\d+)(\d{3})/;
+    while (pattern.test(x))
+        x = x.replace(pattern, "$1"+sep+"$2");
+    return x;
 }
