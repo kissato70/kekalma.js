@@ -1,6 +1,8 @@
 
+class kekalma {
+
 //**************************** HTML kódeltávolító *************************************************
-exports removeHTMLTags = function(HTMLtxt){
+removeHTMLTags = function(HTMLtxt){
     if(HTMLtxt)
     {	
          HTMLtxt = HTMLtxt.replace(/&(lt|gt);/g, function (strMatch, p1){
@@ -14,7 +16,7 @@ exports removeHTMLTags = function(HTMLtxt){
 
 
 //****************************  Ezres szeparátor *************************************************
-exports ezres = function(x,sep) {
+ezres = function(x,sep) {
 	if (sep==null) { sep=' '; }
 	x = x.toString();
     var pattern = /(-?\d+)(\d{3})/;
@@ -22,3 +24,9 @@ exports ezres = function(x,sep) {
         x = x.replace(pattern, "$1"+sep+"$2");
     return x;
 }
+
+
+};
+
+
+exports default kekalma = kekalma;
