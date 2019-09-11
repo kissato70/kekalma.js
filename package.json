@@ -1,6 +1,6 @@
 {
   "name": "kekalma",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "kekalma.js - a collection of javascript utilities",
   "main": "kekalma.js",
   "scripts": {
