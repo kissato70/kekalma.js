@@ -29,4 +29,4 @@ ezres = function(x,sep) {
 };
 
 
-exports default kekalma = kekalma;
+export default kekalma;
