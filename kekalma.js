@@ -2,7 +2,7 @@
 module.exports = class kekalma {
 
 //**************************** HTML kódeltávolító *************************************************
-removeHTMLTags = function(HTMLtxt){
+removeHTMLTags (HTMLtxt){
     if(HTMLtxt)
     {	
          HTMLtxt = HTMLtxt.replace(/&(lt|gt);/g, function (strMatch, p1){
@@ -16,7 +16,7 @@ removeHTMLTags = function(HTMLtxt){
 
 
 //****************************  Ezres szeparátor *************************************************
-ezres = function(x,sep) {
+ezres (x,sep) {
 	if (sep==null) { sep=' '; }
 	x = x.toString();
     var pattern = /(-?\d+)(\d{3})/;
