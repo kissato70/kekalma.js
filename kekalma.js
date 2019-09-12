@@ -1,5 +1,5 @@
 
-module.exports = class kekalma {
+export default class kekalma {
 
 //**************************** HTML kódeltávolító *************************************************
 removeHTMLTags = (HTMLtxt) => {
